@@ -11,7 +11,7 @@
  * @brief Récupère le type d'un élément à partir d'une chaîne.
  *
  * @param arg Chaîne représentant le type ("ACTUATOR", "DEVICE", etc.)
- * @return type_t Type correspondant, ou 5 si non trouvé.
+ * @return type_t Type correspondant, ou NONE si non trouvé.
  */
 static type_t get_type(char *arg)
 {
@@ -41,7 +41,8 @@ static int display_element_added(data_t *data)
 }
 
 /**
- * @brief Ajoute des éléments à la liste organisée à partir d'un tableau d'arguments.
+ * @brief Ajoute des éléments à la liste organisée à partir d'un tableau
+ *        d'arguments.
  *
  * @param organized Pointeur vers la structure organized_t
  * @param args Tableau de chaînes (type, nom, ...)

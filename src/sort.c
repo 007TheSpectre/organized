@@ -32,8 +32,8 @@ static int my_intcmp(int int1, int int2)
  * @param i Indice de critère
  * @return Résultat de la comparaison
  */
-static int type_case
-(data_t *data1, data_t *data2, type_sort_t *sort_order, int i)
+static int type_case(data_t *data1, data_t *data2,
+    type_sort_t *sort_order, int i)
 {
     int cmp_val = my_intcmp(data1->type, data2->type);
 
@@ -53,8 +53,8 @@ static int type_case
  * @param i Indice de critère
  * @return Résultat de la comparaison
  */
-static int name_case
-(data_t *data1, data_t *data2, type_sort_t *sort_order, int i)
+static int name_case(data_t *data1, data_t *data2,
+    type_sort_t *sort_order, int i)
 {
     int cmp_val = my_strcmp(data1->name, data2->name);
 
@@ -74,8 +74,8 @@ static int name_case
  * @param i Indice de critère
  * @return Résultat de la comparaison
  */
-static int id_case
-(data_t *data1, data_t *data2, type_sort_t *sort_order, int i)
+static int id_case(data_t *data1, data_t *data2,
+    type_sort_t *sort_order, int i)
 {
     int cmp_val = my_intcmp(data1->id, data2->id);
 
@@ -95,8 +95,8 @@ static int id_case
  * @param i Indice de critère
  * @return Résultat de la comparaison
  */
-static int switch_case
-(data_t *data1, data_t *data2, type_sort_t *sort_order, int i)
+static int switch_case(data_t *data1, data_t *data2,
+    type_sort_t *sort_order, int i)
 {
     switch (sort_order[i]) {
         case TYPE:
