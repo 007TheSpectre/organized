@@ -1,0 +1,57 @@
+\hypertarget{del_8c}{}\doxysection{src/del.c File Reference}
+\label{del_8c}\index{src/del.c@{src/del.c}}
+{\ttfamily \#include \char`\"{}organized.\+h\char`\"{}}\newline
+Include dependency graph for del.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{del_8c_af0404c0f17fc42051c28d0a4a30e1538}{my\+\_\+delete\+\_\+cmp}} (\mbox{\hyperlink{organized_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} $\ast$data1, \mbox{\hyperlink{organized_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} $\ast$data2)
+\begin{DoxyCompactList}\small\item\em Compare deux éléments data\+\_\+t par leur id et libère le premier en cas d\textquotesingle{}égalité. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{del_8c_a8301b8e474868b0a3a1977d93f1cafdc}{del}} (void $\ast$data, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Supprime des éléments de la liste organisée selon les ids passés en arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{del_8c_a8301b8e474868b0a3a1977d93f1cafdc}\label{del_8c_a8301b8e474868b0a3a1977d93f1cafdc}} 
+\index{del.c@{del.c}!del@{del}}
+\index{del@{del}!del.c@{del.c}}
+\doxysubsubsection{\texorpdfstring{del()}{del()}}
+{\footnotesize\ttfamily int del (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Supprime des éléments de la liste organisée selon les ids passés en arguments. 
+
+Supprime des éléments de la liste organisée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Tableau de chaînes contenant les ids à supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{del_8c_af0404c0f17fc42051c28d0a4a30e1538}\label{del_8c_af0404c0f17fc42051c28d0a4a30e1538}} 
+\index{del.c@{del.c}!my\_delete\_cmp@{my\_delete\_cmp}}
+\index{my\_delete\_cmp@{my\_delete\_cmp}!del.c@{del.c}}
+\doxysubsubsection{\texorpdfstring{my\_delete\_cmp()}{my\_delete\_cmp()}}
+{\footnotesize\ttfamily int my\+\_\+delete\+\_\+cmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{organized_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} $\ast$}]{data1,  }\item[{\mbox{\hyperlink{organized_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} $\ast$}]{data2 }\end{DoxyParamCaption})}
+
+
+
+Compare deux éléments data\+\_\+t par leur id et libère le premier en cas d\textquotesingle{}égalité. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data1} & Premier élément à comparer et à libérer \\
+\hline
+{\em data2} & Deuxième élément à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 si id1 \texorpdfstring{$<$}{<} id2, 1 si id1 \texorpdfstring{$>$}{>} id2, 0 si égalité (et libération) 
+\end{DoxyReturn}

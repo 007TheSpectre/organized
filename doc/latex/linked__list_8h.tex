@@ -1,0 +1,154 @@
+\hypertarget{linked__list_8h}{}\doxysection{include/linked\+\_\+list.h File Reference}
+\label{linked__list_8h}\index{include/linked\_list.h@{include/linked\_list.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for linked\+\_\+list.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlinked__list}{linked\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un maillon de liste chaînée générique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structlinked__list}{linked\+\_\+list}} \mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un maillon de liste chaînée générique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$ \mbox{\hyperlink{linked__list_8h_ace85eee16712b9ff66319faf8fe67749}{adding\+\_\+end}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$node, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Ajoute un élément à la fin de la liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$ \mbox{\hyperlink{linked__list_8h_a6481c68e61ca9a149203342a032aa376}{adding\+\_\+begin}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$node, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Ajoute un élément au début de la liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$ \mbox{\hyperlink{linked__list_8h_a1305db4e821e7f186f651c70b41b4d68}{my\+\_\+params\+\_\+to\+\_\+list}} (int ac, char $\ast$const $\ast$av)
+\begin{DoxyCompactList}\small\item\em Transforme les paramètres en liste chaînée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{linked__list_8h_af500f7aac4a51a3d77f31dae3df91277}{my\+\_\+rev\+\_\+list}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$begin)
+\begin{DoxyCompactList}\small\item\em Inverse la liste chaînée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{linked__list_8h_a37c6aa2fc4ff1bf37016a50021b2a5e9}{my\+\_\+list\+\_\+size}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} const $\ast$begin)
+\begin{DoxyCompactList}\small\item\em Retourne la taille de la liste chaînée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{linked__list_8h_a9a61d525e0ce212974911cbfa72934e1}{my\+\_\+delete\+\_\+nodes}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$begin, void const $\ast$data\+\_\+ref, int($\ast$cmp)())
+\begin{DoxyCompactList}\small\item\em Supprime les noeuds correspondant à data\+\_\+ref. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{linked__list_8h_ac975de000093ac1c4654897aa17af36e}{my\+\_\+concat\+\_\+list}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$begin1, \mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$begin2)
+\begin{DoxyCompactList}\small\item\em Concatène deux listes chaînées. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{linked__list_8h_a1795e7c751f1fea953a5cd7740d20e26}{my\+\_\+sort\+\_\+list}} (\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$begin, int($\ast$cmp)())
+\begin{DoxyCompactList}\small\item\em Trie la liste chaînée selon la fonction de comparaison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}\label{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}} 
+\index{linked\_list.h@{linked\_list.h}!linked\_list\_t@{linked\_list\_t}}
+\index{linked\_list\_t@{linked\_list\_t}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{linked\_list\_t}{linked\_list\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structlinked__list}{linked\+\_\+list}} \mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}}}
+
+
+
+Structure d\textquotesingle{}un maillon de liste chaînée générique. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{linked__list_8h_a6481c68e61ca9a149203342a032aa376}\label{linked__list_8h_a6481c68e61ca9a149203342a032aa376}} 
+\index{linked\_list.h@{linked\_list.h}!adding\_begin@{adding\_begin}}
+\index{adding\_begin@{adding\_begin}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{adding\_begin()}{adding\_begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$ adding\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$}]{node,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Ajoute un élément au début de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Tête de liste \\
+\hline
+{\em data} & Donnée à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nouvelle tête de liste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{linked__list_8h_ace85eee16712b9ff66319faf8fe67749}\label{linked__list_8h_ace85eee16712b9ff66319faf8fe67749}} 
+\index{linked\_list.h@{linked\_list.h}!adding\_end@{adding\_end}}
+\index{adding\_end@{adding\_end}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{adding\_end()}{adding\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$ adding\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$}]{node,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Ajoute un élément à la fin de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Tête de liste \\
+\hline
+{\em data} & Donnée à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nouvelle tête de liste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{linked__list_8h_ac975de000093ac1c4654897aa17af36e}\label{linked__list_8h_ac975de000093ac1c4654897aa17af36e}} 
+\index{linked\_list.h@{linked\_list.h}!my\_concat\_list@{my\_concat\_list}}
+\index{my\_concat\_list@{my\_concat\_list}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{my\_concat\_list()}{my\_concat\_list()}}
+{\footnotesize\ttfamily void my\+\_\+concat\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$}]{begin1,  }\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$}]{begin2 }\end{DoxyParamCaption})}
+
+
+
+Concatène deux listes chaînées. 
+
+\mbox{\Hypertarget{linked__list_8h_a9a61d525e0ce212974911cbfa72934e1}\label{linked__list_8h_a9a61d525e0ce212974911cbfa72934e1}} 
+\index{linked\_list.h@{linked\_list.h}!my\_delete\_nodes@{my\_delete\_nodes}}
+\index{my\_delete\_nodes@{my\_delete\_nodes}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{my\_delete\_nodes()}{my\_delete\_nodes()}}
+{\footnotesize\ttfamily int my\+\_\+delete\+\_\+nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$}]{begin,  }\item[{void const $\ast$}]{data\+\_\+ref,  }\item[{int($\ast$)()}]{cmp }\end{DoxyParamCaption})}
+
+
+
+Supprime les noeuds correspondant à data\+\_\+ref. 
+
+\mbox{\Hypertarget{linked__list_8h_a37c6aa2fc4ff1bf37016a50021b2a5e9}\label{linked__list_8h_a37c6aa2fc4ff1bf37016a50021b2a5e9}} 
+\index{linked\_list.h@{linked\_list.h}!my\_list\_size@{my\_list\_size}}
+\index{my\_list\_size@{my\_list\_size}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{my\_list\_size()}{my\_list\_size()}}
+{\footnotesize\ttfamily int my\+\_\+list\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} const $\ast$}]{begin }\end{DoxyParamCaption})}
+
+
+
+Retourne la taille de la liste chaînée. 
+
+\mbox{\Hypertarget{linked__list_8h_a1305db4e821e7f186f651c70b41b4d68}\label{linked__list_8h_a1305db4e821e7f186f651c70b41b4d68}} 
+\index{linked\_list.h@{linked\_list.h}!my\_params\_to\_list@{my\_params\_to\_list}}
+\index{my\_params\_to\_list@{my\_params\_to\_list}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{my\_params\_to\_list()}{my\_params\_to\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$ my\+\_\+params\+\_\+to\+\_\+list (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$const $\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+Transforme les paramètres en liste chaînée. 
+
+\mbox{\Hypertarget{linked__list_8h_af500f7aac4a51a3d77f31dae3df91277}\label{linked__list_8h_af500f7aac4a51a3d77f31dae3df91277}} 
+\index{linked\_list.h@{linked\_list.h}!my\_rev\_list@{my\_rev\_list}}
+\index{my\_rev\_list@{my\_rev\_list}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{my\_rev\_list()}{my\_rev\_list()}}
+{\footnotesize\ttfamily void my\+\_\+rev\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$}]{begin }\end{DoxyParamCaption})}
+
+
+
+Inverse la liste chaînée. 
+
+\mbox{\Hypertarget{linked__list_8h_a1795e7c751f1fea953a5cd7740d20e26}\label{linked__list_8h_a1795e7c751f1fea953a5cd7740d20e26}} 
+\index{linked\_list.h@{linked\_list.h}!my\_sort\_list@{my\_sort\_list}}
+\index{my\_sort\_list@{my\_sort\_list}!linked\_list.h@{linked\_list.h}}
+\doxysubsubsection{\texorpdfstring{my\_sort\_list()}{my\_sort\_list()}}
+{\footnotesize\ttfamily void my\+\_\+sort\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{linked__list_8h_a4b66e4d3b6bddf6ccf18ee41b6374c9f}{linked\+\_\+list\+\_\+t}} $\ast$$\ast$}]{begin,  }\item[{int($\ast$)()}]{cmp }\end{DoxyParamCaption})}
+
+
+
+Trie la liste chaînée selon la fonction de comparaison. 
+

@@ -12,27 +12,26 @@
  *
  * @param data Pointeur vers la structure data_t à afficher
  */
-void print_type(data_t *data)
-{
-    switch (data->type) {
-    case ACTUATOR:
-        my_putstr("ACTUATOR");
-        break;
-    case DEVICE:
-        my_putstr("DEVICE");
-        break;
-    case PROCESSOR:
-        my_putstr("PROCESSOR");
-        break;
-    case SENSOR:
-        my_putstr("SENSOR");
-        break;
-    case WIRE:
-        my_putstr("WIRE");
-        break;
-    default:
-        break;
-    }
+void print_type(data_t *data) {
+  switch (data->type) {
+  case ACTUATOR:
+    my_putstr("ACTUATOR");
+    break;
+  case DEVICE:
+    my_putstr("DEVICE");
+    break;
+  case PROCESSOR:
+    my_putstr("PROCESSOR");
+    break;
+  case SENSOR:
+    my_putstr("SENSOR");
+    break;
+  case WIRE:
+    my_putstr("WIRE");
+    break;
+  default:
+    break;
+  }
 }
 
 /**
@@ -42,19 +41,18 @@ void print_type(data_t *data)
  * @param args Arguments inutilisés
  * @return 0 Toujours 0
  */
-int disp(void *data, char **args)
-{
-    organized_t *organized = (organized_t *)data;
+int disp(void *data, char **args) {
+  organized_t *organized = (organized_t *)data;
 
-    args = args;
-    for (linked_list_t *current = organized->linked_list;
-    current; current = current->next) {
-        print_type(current->data);
-        my_putstr(" n°");
-        my_put_nbr(((data_t *)current->data)->id);
-        my_putstr(" - \"");
-        my_putstr(((data_t *)current->data)->name);
-        my_putstr("\"\n");
-    }
-    return 0;
+  args = args;
+  for (linked_list_t *current = organized->linked_list; current;
+       current = current->next) {
+    print_type(current->data);
+    my_putstr(" n°");
+    my_put_nbr(((data_t *)current->data)->id);
+    my_putstr(" - \"");
+    my_putstr(((data_t *)current->data)->name);
+    my_putstr("\"\n");
+  }
+  return 0;
 }

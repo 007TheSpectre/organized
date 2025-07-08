@@ -1,0 +1,4 @@
+<map id="organized_s" name="organized_s">
+<area shape="rect" id="node1" title="Structure principale contenant la liste et l&#39;id courant." alt="" coords="5,95,105,121"/>
+<area shape="rect" id="node2" href="$structlinked__list.html" title="Structure d&#39;un maillon de liste chaînée générique." alt="" coords="11,5,99,32"/>
+</map>

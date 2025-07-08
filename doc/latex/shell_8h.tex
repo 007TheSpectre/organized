@@ -1,0 +1,166 @@
+\hypertarget{shell_8h}{}\doxysection{include/shell.h File Reference}
+\label{shell_8h}\index{include/shell.h@{include/shell.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{shell_8h_a13bdcc033cecc7d8de3d6a4affee5bc8}{add}} (void $\ast$data, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Ajoute un élément à la liste organisée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell_8h_a8301b8e474868b0a3a1977d93f1cafdc}{del}} (void $\ast$data, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Supprime des éléments de la liste organisée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell_8h_a39ff45c1451cf2956becfdcfc830064d}{sort}} (void $\ast$data, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Trie la liste organisée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell_8h_a19faaf7b0896166f35d647ce59acaec6}{disp}} (void $\ast$data, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Affiche les éléments de la liste organisée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell_8h_a618e8f5a780753fb8f3a82ac20099cdd}{workshop\+\_\+shell}} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Lance le shell interactif de gestion d\textquotesingle{}éléments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{shell_8h_a13bdcc033cecc7d8de3d6a4affee5bc8}\label{shell_8h_a13bdcc033cecc7d8de3d6a4affee5bc8}} 
+\index{shell.h@{shell.h}!add@{add}}
+\index{add@{add}!shell.h@{shell.h}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily int add (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Ajoute un élément à la liste organisée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Tableau d\textquotesingle{}arguments (type, nom, ...) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur
+\end{DoxyReturn}
+Ajoute un élément à la liste organisée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Tableau de chaînes (type, nom, ...) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shell_8h_a8301b8e474868b0a3a1977d93f1cafdc}\label{shell_8h_a8301b8e474868b0a3a1977d93f1cafdc}} 
+\index{shell.h@{shell.h}!del@{del}}
+\index{del@{del}!shell.h@{shell.h}}
+\doxysubsubsection{\texorpdfstring{del()}{del()}}
+{\footnotesize\ttfamily int del (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Supprime des éléments de la liste organisée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Tableau d\textquotesingle{}arguments (ids à supprimer) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur
+\end{DoxyReturn}
+Supprime des éléments de la liste organisée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Tableau de chaînes contenant les ids à supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shell_8h_a19faaf7b0896166f35d647ce59acaec6}\label{shell_8h_a19faaf7b0896166f35d647ce59acaec6}} 
+\index{shell.h@{shell.h}!disp@{disp}}
+\index{disp@{disp}!shell.h@{shell.h}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}}
+{\footnotesize\ttfamily int disp (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Affiche les éléments de la liste organisée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Inutilisé \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 Toujours 0
+\end{DoxyReturn}
+Affiche les éléments de la liste organisée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Arguments inutilisés \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 Toujours 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shell_8h_a39ff45c1451cf2956becfdcfc830064d}\label{shell_8h_a39ff45c1451cf2956becfdcfc830064d}} 
+\index{shell.h@{shell.h}!sort@{sort}}
+\index{sort@{sort}!shell.h@{shell.h}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily int sort (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Trie la liste organisée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Arguments de tri \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur
+\end{DoxyReturn}
+Trie la liste organisée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+{\em args} & Arguments de tri \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shell_8h_a618e8f5a780753fb8f3a82ac20099cdd}\label{shell_8h_a618e8f5a780753fb8f3a82ac20099cdd}} 
+\index{shell.h@{shell.h}!workshop\_shell@{workshop\_shell}}
+\index{workshop\_shell@{workshop\_shell}!shell.h@{shell.h}}
+\doxysubsubsection{\texorpdfstring{workshop\_shell()}{workshop\_shell()}}
+{\footnotesize\ttfamily int workshop\+\_\+shell (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Lance le shell interactif de gestion d\textquotesingle{}éléments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointeur vers la structure organized\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Code de retour du shell 
+\end{DoxyReturn}
