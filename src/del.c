@@ -8,7 +8,8 @@
 #include "organized.h"
 
 /**
- * @brief Compare deux éléments data_t par leur id et libère le premier si égalité.
+ * @brief Compare deux éléments data_t par leur id et libère le premier en cas
+ *        d'égalité.
  *
  * @param data1 Premier élément à comparer et à libérer
  * @param data2 Deuxième élément à comparer
@@ -32,7 +33,8 @@ int my_delete_cmp(data_t *data1, data_t *data2)
 }
 
 /**
- * @brief Supprime des éléments de la liste organisée selon les ids passés en arguments.
+ * @brief Supprime des éléments de la liste organisée selon les ids passés en
+ *        arguments.
  *
  * @param data Pointeur vers la structure organized_t
  * @param args Tableau de chaînes contenant les ids à supprimer
